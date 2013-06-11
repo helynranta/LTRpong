@@ -7,58 +7,58 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\default.html">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\default.html">
       <PackagePath>default.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\asciicat.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\asciicat.png">
       <PackagePath>images\asciicat.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\asciicat150.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\asciicat150.png">
       <PackagePath>images\asciicat150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\asciicatsized.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\asciicatsized.png">
       <PackagePath>images\asciicatsized.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\cutecloud.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\cutecloud.png">
       <PackagePath>images\cutecloud.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\logo.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\smalllogo.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\splashscreen.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\storelogo.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\images\sonic.jpg">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\images\sonic.jpg">
       <PackagePath>images\sonic.jpg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\js\CreateJS\easeljs-0.6.1.min.js">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\js\CreateJS\easeljs-0.6.1.min.js">
       <PackagePath>js\CreateJS\easeljs-0.6.1.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\js\CreateJS\preloadjs-0.3.1.min.js">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\js\CreateJS\preloadjs-0.3.1.min.js">
       <PackagePath>js\CreateJS\preloadjs-0.3.1.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\js\default.js">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\js\default.js">
       <PackagePath>js\default.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\css\default.css">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

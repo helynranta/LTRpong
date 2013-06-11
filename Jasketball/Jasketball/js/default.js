@@ -18,6 +18,13 @@
     var shotsLeft = SHOTS;
     var texti;
 
+    var isShotFlying = false;
+    var playerFire = false;
+    var shotVelocity;
+
+    var MAX_SHOT_POWER = 10;
+    var GRAVITY = 0.07;
+
     //Own variables end
 
     app.onactivated = function (args) {
@@ -83,6 +90,12 @@
 
         stage.update();
         context.fillText("Shots left: " + shotsLeft, 300, 300);
+        startGame();
+    }
+    function startGame()
+    {
+        createjs.Ticker.setInterval(window.requestAnimationFrame);
+        createjs.Ticker.addListener(gameLoop);
     }
 
     function gameLoop()
@@ -93,12 +106,35 @@
 
     function update()
     {
+        if (isShotFlying)
+        {
+            //shot in the air
+            ammoBitmap.x += shotVelocity.x;
+            ammoBitmap.y += shotVelocity.y;
+            shotVelocity.y += GRAVITY; //apply gravity
+        }
 
+            //Should player fire?
+        else
+        {
+            ammoBitmap.x = p1Bitmap.x + (p1Bitmap.image.width * 0.5);
+            ammoBitmap.y = p1Bitmap.y;
+            shotVelocity = new createjs.Point(
+                Math.random() * (4 * 0.5) + 3,
+                Math.random() * (-3 * 0.5) - 1);
+            fireShot();
+        }
+    }
+
+    function fireShot()
+    {
+        ammoBitmap.visible = true;
+        isShotFlying = true;
     }
 
     function draw()
     {
-
+        stage.update();
     }
     //Own functions END
 

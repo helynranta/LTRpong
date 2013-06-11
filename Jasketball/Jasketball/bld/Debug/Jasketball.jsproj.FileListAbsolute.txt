@@ -11,3 +11,16 @@ c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bl
 c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\pri.resfiles
 c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\LanguageQualifiers.txt
 c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\ProjectArchitectures.txt
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bin\Debug\resources.pri
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bin\Debug\AppxManifest.xml
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bin\Debug\Jasketball.build.appxrecipe
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\priconfig.xml.intermediate
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\layout.resfiles.intermediate
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\resources.resfiles.intermediate
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\pri.resfiles.intermediate
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\priconfig.xml
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\layout.resfiles
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\resources.resfiles
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\pri.resfiles
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\LanguageQualifiers.txt
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\bld\Debug\ProjectArchitectures.txt

@@ -1,1 +1,1 @@
-c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\Jasketball.jsproj;neutral
+C:\Users\codecamp\Documents\GitHub\LTRpong\Jasketball\Jasketball\Jasketball.jsproj;neutral
