@@ -1,0 +1,13 @@
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bin\Debug\resources.pri
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bin\Debug\AppxManifest.xml
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bin\Debug\Jasketball.build.appxrecipe
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\priconfig.xml.intermediate
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\layout.resfiles.intermediate
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\resources.resfiles.intermediate
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\pri.resfiles.intermediate
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\priconfig.xml
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\layout.resfiles
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\resources.resfiles
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\pri.resfiles
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\LanguageQualifiers.txt
+c:\users\codecamp\documents\visual studio 2012\Projects\Jasketball\Jasketball\bld\Debug\ProjectArchitectures.txt
