@@ -1,0 +1,4 @@
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\GamePS.csproj;neutral
+C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\FarseerPhysicsEngineMetro\FarseerPhysicsEngineMetro.csproj;neutral
+C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\FarseerPhysicsEngineMetro\FarseerPhysicsEngineMetro.csproj;neutral
+C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\Spritehand.PhysicsHelper.Metro\Spritehand.PhysicsHelper.Metro.csproj;neutral

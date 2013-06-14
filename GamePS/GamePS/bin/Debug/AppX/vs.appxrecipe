@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-IJ22OAOI5UT</Machine>
+    <WindowsUser>codecamp</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>8BB40503927E77BFEBE53272C088D4BCF3E5962DDCC82582EA17969EF2BFE4BF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ea8bba20-9201-4cb1-a99f-36c2aacf9d4e_1.0.0.0_neutral__qj5ja5pefmqbr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ea8bba20-9201-4cb1-a99f-36c2aacf9d4e_qj5ja5pefmqbr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ea8bba20-9201-4cb1-a99f-36c2aacf9d4e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=codecamp</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-06-13T07:56:25.428</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\GamePS.exe">
+      <PackagePath>GamePS.exe</PackagePath>
+      <Modified>2013-06-13T07:56:25.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\GamePS.pdb">
+      <PackagePath>GamePS.pdb</PackagePath>
+      <Modified>2013-06-13T07:56:25.193</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\FarseerPhysicsEngineMetro\bin\Debug\FarseerPhysicsEngineMetro.pdb">
+      <PackagePath>FarseerPhysicsEngineMetro.pdb</PackagePath>
+      <Modified>2013-06-13T07:56:21.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\Spritehand.PhysicsHelper.Metro\bin\Debug\Spritehand.PhysicsHelper.Metro.pdb">
+      <PackagePath>Spritehand.PhysicsHelper.Metro.pdb</PackagePath>
+      <Modified>2013-06-13T07:56:24.344</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\FarseerPhysicsEngineMetro\bin\Debug\FarseerPhysicsEngineMetro.dll">
+      <PackagePath>FarseerPhysicsEngineMetro.dll</PackagePath>
+      <Modified>2013-06-13T07:56:21.435</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\Spritehand.PhysicsHelper.Metro\bin\Debug\Spritehand.PhysicsHelper.Metro.dll">
+      <PackagePath>Spritehand.PhysicsHelper.Metro.dll</PackagePath>
+      <Modified>2013-06-13T07:56:24.364</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\Spritehand.PhysicsHelper.Metro\bin\Debug\Farseer Physics Engine Metro.dll">
+      <PackagePath>Farseer Physics Engine Metro.dll</PackagePath>
+      <Modified>2013-06-12T09:48:57.095</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\Downloads\PhysicsHelperXAML_1.1.0.0\Spritehand.PhysicsHelper.Metro\bin\Debug\Farseer Physics Engine Metro.pdb">
+      <PackagePath>Farseer Physics Engine Metro.pdb</PackagePath>
+      <Modified>2013-06-12T09:48:57.234</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T17:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T17:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T17:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-15T17:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\ball1.png">
+      <PackagePath>Image\ball1.png</PackagePath>
+      <Modified>2013-06-12T11:46:45.872</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-06-12T10:14:39.710</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T13:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-06-13T07:54:34.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-06-12T11:50:19.919</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
