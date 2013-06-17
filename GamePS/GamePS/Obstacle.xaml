@@ -9,7 +9,7 @@
     mc:Ignorable="d">
 
     <Canvas x:Name="Obstacles">
-        <ph:PhysicsSprite x:Name="obstacle" Canvas.Left="100" Canvas.Top="100" Width="10" Height="70" IsStatic="True">
+        <ph:PhysicsSprite x:Name="obstacle" Canvas.Left="100" Canvas.Top="100" Width="10" Height="70" IsStatic="True" CollisionGroup="2">
             <Rectangle Width="10" Height="70" Fill="Black"/>
         </ph:PhysicsSprite>
     </Canvas>

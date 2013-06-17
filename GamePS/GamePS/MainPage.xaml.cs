@@ -26,6 +26,7 @@ namespace GamePS
     {
         public MainPage()
         {
+            
             this.InitializeComponent();
             this.CreateObs();
         }
@@ -59,16 +60,19 @@ namespace GamePS
         }
 
         public Vector2 dir = new Vector2(2, 1);
-        public void move(Vector2 suunta)
+        public float length;
+        public void move(Vector2 direction)
         {
             List<PhysicsSprite> physicsList = cnvGame.PhysicsObjects.Values.ToList();
             for (int i = 0; i < physicsList.Count; i++)
             {
                 PhysicsSprite spr = physicsList[i];
                 //dir = direction of the impulse vector, END_POINT - START_POINT
-                dir = suunta - spr.Position;
+                dir = direction - spr.Position;
+                length = dir.Length();
                 // let's make a unit vector out of it
                 dir.Normalize();
+                dir *= 0.5f;
                 spr.BodyObject.ApplyLinearImpulse(dir);
                 
             }
@@ -108,12 +112,12 @@ namespace GamePS
             for (int i = 0; i < 10; i++)
             {
                 Obstacle obs = new Obstacle();
+                
                 x = random.Next(1,(int)(cnvGame.ActualWidth-obs.ActualWidth));
                 y = random.Next(1, (int)(cnvGame.ActualHeight-obs.ActualHeight));
                 cnvGame.AddPhysicsUserControl(obs, x, y);
             }
         }
-
-        
+      
     }
 }
