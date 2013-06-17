@@ -6,4 +6,5 @@ App.xaml
 Box.xaml
 Common\StandardStyles.xaml
 MainPage.xaml
+Obstacle.xaml
 Image\ball1.png

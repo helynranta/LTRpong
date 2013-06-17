@@ -36,3 +36,6 @@ c:\users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\
 C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Box.g.i.cs
 C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Box.g.cs
 C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Box.xaml
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Obstacle.g.i.cs
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Obstacle.g.cs
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Obstacle.xaml

@@ -68,6 +68,9 @@
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\Obstacle.xaml">
+      <PackagePath>Obstacle.xaml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>

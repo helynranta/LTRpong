@@ -27,7 +27,10 @@ namespace GamePS
         public MainPage()
         {
             this.InitializeComponent();
+            this.CreateObs();
         }
+
+        Random random = new Random();
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -39,7 +42,7 @@ namespace GamePS
 
         }
 
-        //Button that spawns three balls. No, this is the spaw functions that creates the balls
+        //Creates balls to the canvas
         public void spawn()
         {
             for (int i = 0; i < 3; i++)
@@ -55,30 +58,36 @@ namespace GamePS
             spawn();
         }
 
-        public void move(Vector2 location)
+        public Vector2 dir = new Vector2(2, 1);
+        public void move(Vector2 suunta)
         {
             List<PhysicsSprite> physicsList = cnvGame.PhysicsObjects.Values.ToList();
             for (int i = 0; i < physicsList.Count; i++)
             {
                 PhysicsSprite spr = physicsList[i];
-                //TODO: get the location where the player touches
-                Vector2 dir = spr.BodyObject.Position - location;
-                dir = location;
+                //dir = direction of the impulse vector, END_POINT - START_POINT
+                dir = suunta - spr.Position;
+                // let's make a unit vector out of it
+                dir.Normalize();
                 spr.BodyObject.ApplyLinearImpulse(dir);
                 
             }
         }
 
-
-        public void uTouched(object sender, RoutedEventArgs e)
+        // RoutedEventArgs e
+        public void uTouched(object sender, TappedRoutedEventArgs e )
         {
-            float x = 1f;
-            float y = 1f;
-            //TODO: Somwhow get the players touch location
-            move(new Vector2(x, y));
+            //pt is the position where th euser touched on the canvas
+            Point pt = e.GetPosition(cnvGame);
+            // create a vector2 of the point, to move the objects in the pressed location
+            Vector2 suunta;
+            suunta.X = (float)pt.X;
+            suunta.Y = (float)pt.Y;
+
+            move(suunta);
         }
 
-        public void DeleteAll(object sender, RoutedEventArgs e)
+        public void DeleteAll(object sender, RoutedEventArgs e )
         {
             List<PhysicsSprite> lista = cnvGame.PhysicsObjects.Values.ToList();
             for (int i = lista.Count - 1; i >= 0; i--)
@@ -89,7 +98,22 @@ namespace GamePS
                 if (spr.Name != "ground" && (spr.Name.StartsWith("ground") == false))
                     cnvGame.DeletePhysicsObject(spr.Name);
             }
+
+            CreateObs();
         }
+
+        public void CreateObs()
+        {
+            int x, y;
+            for (int i = 0; i < 10; i++)
+            {
+                Obstacle obs = new Obstacle();
+                x = random.Next(1,(int)(cnvGame.ActualWidth-obs.ActualWidth));
+                y = random.Next(1, (int)(cnvGame.ActualHeight-obs.ActualHeight));
+                cnvGame.AddPhysicsUserControl(obs, x, y);
+            }
+        }
+
         
     }
 }

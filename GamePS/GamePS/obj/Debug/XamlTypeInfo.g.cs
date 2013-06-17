@@ -122,6 +122,8 @@ namespace GamePS.GamePS_XamlTypeInfo
 
         private object Activate_8_MainPage() { return new global::GamePS.MainPage(); }
 
+        private object Activate_9_Obstacle() { return new global::GamePS.Obstacle(); }
+
         private void MapAdd_7_Dictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>)instance;
@@ -342,6 +344,12 @@ namespace GamePS.GamePS_XamlTypeInfo
             case "GamePS.MainPage":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_8_MainPage;
+                xamlType = userType;
+                break;
+
+            case "GamePS.Obstacle":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Obstacle), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_Obstacle;
                 xamlType = userType;
                 break;
 
