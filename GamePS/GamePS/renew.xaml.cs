@@ -19,9 +19,9 @@ namespace GamePS
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Menu : Page
+    public sealed partial class renew : Page
     {
-        public Menu()
+        public renew()
         {
             this.InitializeComponent();
         }
@@ -33,11 +33,6 @@ namespace GamePS
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-        }
-
-        public void play_game(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

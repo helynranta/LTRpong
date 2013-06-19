@@ -42,3 +42,6 @@ C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\
 C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Menu.g.i.cs
 C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Menu.g.cs
 C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Menu.xaml
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Gameplay.g.i.cs
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Gameplay.g.cs
+C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\obj\Debug\Gameplay.xaml

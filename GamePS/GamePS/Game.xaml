@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="GamePS.MainPage"
+    xmlns:ph="using:Spritehand.FarseerHelper"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GamePS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--This project uses Physics Helper XAML and is based on their getting started tutorial http://physicshelperxaml.codeplex.com/documentation-->
+
+    <!--This the canvas we draw on-->
+    <Canvas x:Name="cnvGameOuter">
+        <!--This is the physics canvas where all the action happens-->
+        <ph:PhysicsCanvas x:Name="cnvGame" Background="PaleVioletRed" MousePickEnabled="False" Tapped="uTouched">
+            <!--Creating a rectangle to the screen-->
+            <ph:PhysicsSprite x:Name="block" Canvas.Left="200" Canvas.Top="50" Width="50" Height="50" RestitutionCoefficient=" 0.8">
+                <Rectangle Width="50" Height="50" Fill="IndianRed"/>
+            </ph:PhysicsSprite>
+
+            <!--Creating the walls, so that nothing bounces off the screen, still looks ugly, because made with the visual desginger-->
+            <ph:PhysicsSprite x:Name="ground" Background="Gainsboro" Canvas.Left="0" Canvas.Top="648" Width="1366" Height="120" IsStatic="True">
+
+            </ph:PhysicsSprite>
+            <ph:PhysicsSprite x:Name="ground_Copy" Background="DarkGreen" Canvas.Left="-309.582" Canvas.Top="310.03" Width="645.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <ph:PhysicsSprite.RenderTransform>
+                    <CompositeTransform Rotation="90.0"/>
+                </ph:PhysicsSprite.RenderTransform>
+            </ph:PhysicsSprite>
+            <ph:PhysicsSprite x:Name="ground_Copy1" Background="DarkGreen" Canvas.Left="1026.239" Canvas.Top="310.03" Width="645.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <ph:PhysicsSprite.RenderTransform>
+                    <CompositeTransform Rotation="90.0"/>
+                </ph:PhysicsSprite.RenderTransform>
+            </ph:PhysicsSprite>
+            <ph:PhysicsSprite x:Name="ground_Copy2" Background="DarkGreen" Canvas.Left="26" Width="1311" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5">
+                <ph:PhysicsSprite.RenderTransform>
+                    <CompositeTransform Rotation="0.0"/>
+                </ph:PhysicsSprite.RenderTransform>
+            </ph:PhysicsSprite>
+
+            <!--This is the "player"-->
+            <ph:PhysicsSprite x:Name="ball1" Canvas.Left="60" Canvas.Top=" 70" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.7">
+                <Image Width="50">
+                    <Image.Source>
+                        <!--DecodePixel saves resources-->
+                        <BitmapImage DecodePixelWidth="50" UriSource="Image/ball1.png" />
+                    </Image.Source>
+                </Image>
+            </ph:PhysicsSprite>
+
+        </ph:PhysicsCanvas>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,20">
+            <!--ApplicationBar buttons use a style defined by the app.-->
+            <!--Button for adding balls-->
+            <Button x:Name="btnAddBlock" Content="Ball ++ 3 ;)" Click="spw" Margin="10,0,10,0" Height="60" FontSize="28" />
+            <!--Button for deleting all objects except the ground/walls + obstacles-->
+            <Button x:Name="btnDelete" Content="Delete ALL" Click="DeleteAll" Margin="10,0,10,0" Height="60" FontSize="28" />
+            <Button x:Name="photoPageButton" Content="Go to photo page" Click="menu"/>
+            <!--Test menu button-->
+        </StackPanel>
+
+    </Canvas>
+
+</Page>

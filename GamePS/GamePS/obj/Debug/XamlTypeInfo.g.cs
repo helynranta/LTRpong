@@ -120,9 +120,9 @@ namespace GamePS.GamePS_XamlTypeInfo
 
         private object Activate_7_Dictionary() { return new global::System.Collections.Generic.Dictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>(); }
 
-        private object Activate_8_MainPage() { return new global::GamePS.MainPage(); }
+        private object Activate_8_Gameplay() { return new global::GamePS.Gameplay(); }
 
-        private object Activate_9_LayoutAwarePage() { return new global::GamePS.Common.LayoutAwarePage(); }
+        private object Activate_9_MainPage() { return new global::GamePS.MainPage(); }
 
         private object Activate_10_Menu() { return new global::GamePS.Menu(); }
 
@@ -345,20 +345,20 @@ namespace GamePS.GamePS_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case "GamePS.MainPage":
-                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+            case "GamePS.Gameplay":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Gameplay), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_Gameplay;
                 xamlType = userType;
                 break;
 
-            case "GamePS.Common.LayoutAwarePage":
-                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_LayoutAwarePage;
+            case "GamePS.MainPage":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_MainPage;
                 xamlType = userType;
                 break;
 
             case "GamePS.Menu":
-                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Menu), GetXamlTypeByName("GamePS.Common.LayoutAwarePage"));
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Menu), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_10_Menu;
                 xamlType = userType;
                 break;

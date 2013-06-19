@@ -5,6 +5,7 @@ Assets\StoreLogo.png
 App.xaml
 Box.xaml
 Common\StandardStyles.xaml
+Gameplay.xaml
 MainPage.xaml
 Menu.xaml
 Obstacle.xaml
