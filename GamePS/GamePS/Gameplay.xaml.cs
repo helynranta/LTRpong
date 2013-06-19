@@ -27,6 +27,7 @@ namespace GamePS
         public Gameplay()
         {
             this.InitializeComponent();
+            cnvGame1.Collision += new PhysicsCanvas.CollisionHandler(hit_basket);
            
         }
 
@@ -141,6 +142,11 @@ namespace GamePS
             PhysicsSprite spr = cnvGame1.PhysicsObjects["ball1"];
             spr.BodyObject.CollisionCategories = FarseerPhysics.Dynamics.Category.Cat2;
             spr.BodyObject.CollidesWith = FarseerPhysics.Dynamics.Category.Cat2;
+        }
+
+        public void hit_basket(PhysicsSprite ball, PhysicsSprite basket, FarseerPhysics.Dynamics.Contacts.Contact contact)
+        {
+
         }
     }
 
