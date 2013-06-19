@@ -7,7 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    
+    <!--This is the BALL "class"-->
     <Canvas x:Name="BOX">
         <ph:PhysicsSprite x:Name="ball1" Canvas.Left="60" Canvas.Top=" 70" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.7" >
             <Image Width="50">

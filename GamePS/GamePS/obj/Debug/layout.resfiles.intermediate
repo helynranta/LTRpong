@@ -6,5 +6,7 @@ App.xaml
 Box.xaml
 Common\StandardStyles.xaml
 MainPage.xaml
+Menu.xaml
 Obstacle.xaml
+Common\ReadMe.txt
 Image\ball1.png

@@ -17,6 +17,11 @@ using Microsoft.Xna.Framework;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
+
+//The game uses Physics Helper XAML for all collision detection and for overall physics
+// http://physicshelperxaml.codeplex.com/
+//The project has been created with the Getting Started tutorial from Physics Helper XAML webpage
+// http://physicshelperxaml.codeplex.com/documentation
 namespace GamePS
 {
     /// <summary>
@@ -28,6 +33,7 @@ namespace GamePS
         {
             
             this.InitializeComponent();
+            //As the game is  started, create a few obstacles to the screen
             this.CreateObs();
         }
 
@@ -68,12 +74,15 @@ namespace GamePS
             {
                 PhysicsSprite spr = physicsList[i];
                 //dir = direction of the impulse vector, END_POINT - START_POINT
+                //END_POINT = user touch location, START_POINT = ball location
                 dir = direction - spr.Position;
                 length = dir.Length();
                 // let's make a unit vector out of it
                 dir.Normalize();
-                dir *= 0.5f;
+                //dir *= 0.7f;
+                //Apply force to the balls in the direction that userd touched on the screen
                 spr.BodyObject.ApplyLinearImpulse(dir);
+                
                 
             }
         }
@@ -91,6 +100,7 @@ namespace GamePS
             move(suunta);
         }
 
+        //Deletes all physics objects except walls/ground / obstacles
         public void DeleteAll(object sender, RoutedEventArgs e )
         {
             List<PhysicsSprite> lista = cnvGame.PhysicsObjects.Values.ToList();
@@ -106,6 +116,7 @@ namespace GamePS
             CreateObs();
         }
 
+        //Creates obstacles in randomized locations
         public void CreateObs()
         {
             int x, y;

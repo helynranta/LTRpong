@@ -122,7 +122,11 @@ namespace GamePS.GamePS_XamlTypeInfo
 
         private object Activate_8_MainPage() { return new global::GamePS.MainPage(); }
 
-        private object Activate_9_Obstacle() { return new global::GamePS.Obstacle(); }
+        private object Activate_9_LayoutAwarePage() { return new global::GamePS.Common.LayoutAwarePage(); }
+
+        private object Activate_10_Menu() { return new global::GamePS.Menu(); }
+
+        private object Activate_11_Obstacle() { return new global::GamePS.Obstacle(); }
 
         private void MapAdd_7_Dictionary(object instance, object key, object item)
         {
@@ -347,9 +351,21 @@ namespace GamePS.GamePS_XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "GamePS.Common.LayoutAwarePage":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_LayoutAwarePage;
+                xamlType = userType;
+                break;
+
+            case "GamePS.Menu":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Menu), GetXamlTypeByName("GamePS.Common.LayoutAwarePage"));
+                userType.Activator = Activate_10_Menu;
+                xamlType = userType;
+                break;
+
             case "GamePS.Obstacle":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Obstacle), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_Obstacle;
+                userType.Activator = Activate_11_Obstacle;
                 xamlType = userType;
                 break;
 
