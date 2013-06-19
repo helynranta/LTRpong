@@ -14,10 +14,9 @@
 
             <!--Creating the walls, so that nothing goes off the screen, it still looks ugly, because they were made with the visual desginger-->
             <ph:PhysicsSprite x:Name="ground" Background="SteelBlue" Canvas.Left="0" Canvas.Top="648" Width="1366" Height="120" IsStatic="True">
-                <Button x:ConnectionId='2' x:Name="btnDelete" Content="Delete ALL"                   Height="60" FontSize="28" Canvas.Left="121" Canvas.Top="20" />
-                <Button x:ConnectionId='3' x:Name="btnAddBlock" Content="Ball ++ 3 ;)"             Height="60" FontSize="28" Canvas.Left="487" Canvas.Top="20" />
-                <Button x:ConnectionId='4' x:Name="Back" Content="Go home"                 Height="60" FontSize="28" Canvas.Left="905" Canvas.Top="23" />
-
+                <Button x:ConnectionId='3' x:Name="btnDelete" Content="Delete ALL"                   Height="60" FontSize="28" Canvas.Left="102" Canvas.Top="21" />
+                <Button x:ConnectionId='4' x:Name="apuva" Content="ABUVA"             Height="60" FontSize="28" Canvas.Left="321" Canvas.Top="26"/>
+                <Button x:ConnectionId='5' x:Name="btnAddBlock" Content="Ball ++ 3 ;)"             Height="60" FontSize="28" Canvas.Left="569" Canvas.Top="24" />
             </ph:PhysicsSprite>
             <ph:PhysicsSprite x:Name="ground_Copy" Background="DarkGreen" Canvas.Left="-309.582" Canvas.Top="310.03" Width="645.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
@@ -33,6 +32,9 @@
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="0.0"/>
                 </ph:PhysicsSprite.RenderTransform>
+            </ph:PhysicsSprite>
+            <ph:PhysicsSprite x:Name="este" Background="DeepPink" Canvas.Left="260" Width="100" Height="100" IsStatic="True" Canvas.Top="142">
+
             </ph:PhysicsSprite>
 
             <!--This is the "player"-->
@@ -50,6 +52,7 @@
 
         <!--ApplicationBar buttons use a style defined by the app.-->
         <!--Button for adding balls-->
+        <Button x:ConnectionId='2' x:Name="Back" Content="Go home"                 Height="60" FontSize="28" Canvas.Left="905" Canvas.Top="23" />
         <!--Button for deleting all objects except the ground/walls + obstacles-->
     </Canvas>
 </Page>

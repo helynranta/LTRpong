@@ -27,7 +27,7 @@ namespace GamePS
         public Gameplay()
         {
             this.InitializeComponent();
-            this.CreateObs();
+           
         }
 
         /// <summary>
@@ -112,19 +112,36 @@ namespace GamePS
         public void CreateObs()
         {
             int x, y;
-            for (int i = 0; i < 10; i++)
-            {
-                Obstacle obs = new Obstacle();
+            //for (int i = 0; i < 10; i++)
+            //{
+            Obstacle obs = new Obstacle();
 
-                x = random.Next(1, (int)(cnvGame1.ActualWidth - obs.ActualWidth));
-                y = random.Next(1, (int)(cnvGame1.ActualHeight - obs.ActualHeight));
-                cnvGame1.AddPhysicsUserControl(obs, x, y);
-            }
+            //x = random.Next(1, (int)(cnvGame1.ActualWidth - obs.ActualWidth));
+            //y = random.Next(1, (int)(cnvGame1.ActualHeight - obs.ActualHeight));
+            //cnvGame1.AddPhysicsUserControl(obs, x, y);
+            PhysicsSprite objsprite = cnvGame1.PhysicsObjects["este"];
+            objsprite.BodyObject.CollisionCategories = FarseerPhysics.Dynamics.Category.Cat2;
+            objsprite.BodyObject.CollidesWith = FarseerPhysics.Dynamics.Category.Cat2;
+            //}
         }
 
         public void go_back(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
         }
+
+        public void AAA(object sender, RoutedEventArgs e)
+        {
+            set_collision_groups();
+            CreateObs();
+        }
+
+        public void set_collision_groups()
+        {
+            PhysicsSprite spr = cnvGame1.PhysicsObjects["ball1"];
+            spr.BodyObject.CollisionCategories = FarseerPhysics.Dynamics.Category.Cat2;
+            spr.BodyObject.CollidesWith = FarseerPhysics.Dynamics.Category.Cat2;
+        }
     }
+
 }
