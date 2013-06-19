@@ -11,13 +11,12 @@
     <Canvas>
         <!--This is the physics canvas where all the action happens-->
         <ph:PhysicsCanvas x:Name="cnvGame1" Background="PaleVioletRed" MousePickEnabled="False" Tapped="uTouched">
-            <!--Creating a rectangle to the screen-->
-            <ph:PhysicsSprite x:Name="block" Canvas.Left="200" Canvas.Top="50" Width="50" Height="50" RestitutionCoefficient=" 0.8">
-                <Rectangle Width="50" Height="50" Fill="IndianRed"/>
-            </ph:PhysicsSprite>
 
-            <!--Creating the walls, so that nothing bounces off the screen, still looks ugly, because made with the visual desginger-->
-            <ph:PhysicsSprite x:Name="ground" Background="Gainsboro" Canvas.Left="0" Canvas.Top="648" Width="1366" Height="120" IsStatic="True">
+            <!--Creating the walls, so that nothing goes off the screen, it still looks ugly, because they were made with the visual desginger-->
+            <ph:PhysicsSprite x:Name="ground" Background="SteelBlue" Canvas.Left="0" Canvas.Top="648" Width="1366" Height="120" IsStatic="True">
+                <Button x:Name="btnDelete" Content="Delete ALL" Click="DeleteAll" Height="60" FontSize="28" Canvas.Left="121" Canvas.Top="20" />
+                <Button x:Name="btnAddBlock" Content="Ball ++ 3 ;)" Click="spw" Height="60" FontSize="28" Canvas.Left="487" Canvas.Top="20" />
+                <Button x:Name="Back" Content="Go home" Click="go_back" Height="60" FontSize="28" Canvas.Left="905" Canvas.Top="23" />
 
             </ph:PhysicsSprite>
             <ph:PhysicsSprite x:Name="ground_Copy" Background="DarkGreen" Canvas.Left="-309.582" Canvas.Top="310.03" Width="645.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
@@ -51,9 +50,6 @@
 
         <!--ApplicationBar buttons use a style defined by the app.-->
         <!--Button for adding balls-->
-        <Button x:Name="btnAddBlock" Content="Ball ++ 3 ;)" Click="spw" Height="60" FontSize="28" Canvas.Left="605" Canvas.Top="29" />
-        <Button x:Name="btnDelete" Content="Delete ALL" Click="DeleteAll" Height="60" FontSize="28" Canvas.Left="346" Canvas.Top="29" />
         <!--Button for deleting all objects except the ground/walls + obstacles-->
-        <Button x:Name="Back" Content="Go home" Click="go_back" Height="60" FontSize="28" Canvas.Left="920" Canvas.Top="29" />
     </Canvas>
 </Page>
