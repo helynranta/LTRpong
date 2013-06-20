@@ -24,11 +24,81 @@ namespace GamePS
     /// </summary>
     public sealed partial class Gameplay : Page
     {
+        int player_x, player_y;
+        public int scores = 30;
+        public bool Hitmonkey = false;
+        DateTime _dtLastFpsUpdate;
+        DateTime MankeeTime;
+        PhysicsSprite monkey;
+        PhysicsSprite player;
         public Gameplay()
         {
             this.InitializeComponent();
-            cnvGame1.Collision += new PhysicsCanvas.CollisionHandler(hit_basket);
-           
+            cnvGame1.Collision += new PhysicsCanvas.CollisionHandler(cnvGame_Collision);
+            cnvGame1.TimerLoop += new PhysicsCanvas.TimerLoopHandler(cnvGame_TimerLoop);
+            CreateObs();
+            
+        }
+
+        public void init()
+        {
+            PhysicsSprite monkey_temp = cnvGame1.PhysicsObjects["mankee"];
+            PhysicsSprite player_temp = cnvGame1.PhysicsObjects["ball1"];
+            monkey = monkey_temp;
+            player = player_temp;
+            
+        }
+
+        void cnvGame_TimerLoop(object source)
+        {
+            player_y = (int)ball1.Position.Y;
+            player_x = (int)ball1.Position.X;
+            // this event is fired for EACH Timer tick of the simulation.
+            if ((DateTime.Now - _dtLastFpsUpdate).TotalMilliseconds > 2000)
+            {
+                
+                mankee_move();
+                _dtLastFpsUpdate = DateTime.Now;
+            }
+            if ((DateTime.Now - MankeeTime).TotalMilliseconds > 50)
+            {
+                scorecount.Text = String.Format("Score: {0} {1},{2}", scores, player_x, player_y);
+                MankeeTime = DateTime.Now;
+            }
+            if (Hitmonkey == true)
+                Enemyhit();
+            if (scores < -2)
+            {
+                this.Frame.Navigate(typeof(GameOver));
+                scores = 0;
+            }
+            
+        }
+        public void Enemyhit()
+        {
+            scores--;
+            Hitmonkey = false;
+        }
+        public void PlayerScores()
+        {
+            scores++;
+        }
+
+        //To check if player hit mankee, any collectables, goal
+        void cnvGame_Collision(PhysicsSprite sprite1, PhysicsSprite sprite2, FarseerPhysics.Dynamics.Contacts.Contact contact)
+        {
+            // this event is fired for each sprite to sprite collision
+            // taking into account CollisionGroup.
+            if (sprite1.Name == "mankee" && sprite2.Name == "ball1")
+            {
+                Hitmonkey = true;
+            }
+
+            if (sprite1.Name == "ball1" && sprite2.Name == "mouth")
+            {
+                PlayerScores();
+            }
+            
         }
 
         /// <summary>
@@ -74,9 +144,30 @@ namespace GamePS
                 dir.Normalize();
                 //dir *= 0.7f;
                 //Apply force to the balls in the direction that userd touched on the screen
-                spr.BodyObject.ApplyLinearImpulse(dir);
+                if (spr.Name == "ball1")
+                    spr.BodyObject.ApplyLinearImpulse(dir);
 
 
+            }
+        }
+
+        //Moves the monkey == mankee in random direction
+        public void mankee_move()
+        {
+            
+            //direction.Normalize();
+            List<PhysicsSprite> physicsList = cnvGame1.PhysicsObjects.Values.ToList();
+            for (int i = 0; i < physicsList.Count; i++)
+            {
+                PhysicsSprite spr = physicsList[i];
+                if (spr.Name == "mankee" || spr.Name == "mankee2")
+                {
+                    Vector2 test;
+                    test.X = player_x;
+                    test.Y = player_y;
+                    Vector2 direction = Vector2.Normalize(test - spr.Position);
+                    spr.BodyObject.ApplyLinearImpulse(direction);
+                }
             }
         }
 
@@ -113,17 +204,14 @@ namespace GamePS
         public void CreateObs()
         {
             int x, y;
-            //for (int i = 0; i < 10; i++)
-            //{
-            Obstacle obs = new Obstacle();
+            for (int i = 0; i < 10; i++)
+            {
+                Obstacle obs = new Obstacle();
 
-            //x = random.Next(1, (int)(cnvGame1.ActualWidth - obs.ActualWidth));
-            //y = random.Next(1, (int)(cnvGame1.ActualHeight - obs.ActualHeight));
-            //cnvGame1.AddPhysicsUserControl(obs, x, y);
-            PhysicsSprite objsprite = cnvGame1.PhysicsObjects["este"];
-            objsprite.BodyObject.CollisionCategories = FarseerPhysics.Dynamics.Category.Cat2;
-            objsprite.BodyObject.CollidesWith = FarseerPhysics.Dynamics.Category.Cat2;
-            //}
+                x = random.Next(50, (int)(cnvGame1.ActualWidth - (obs.ActualWidth + right_wall.ActualWidth)));
+                y = random.Next(50, (int)(cnvGame1.ActualHeight - (obs.ActualHeight + ground.ActualHeight)));
+                cnvGame1.AddPhysicsUserControl(obs, x, y);
+            }
         }
 
         public void go_back(object sender, RoutedEventArgs e)
@@ -133,21 +221,18 @@ namespace GamePS
 
         public void AAA(object sender, RoutedEventArgs e)
         {
-            set_collision_groups();
+            //set_collision_groups();
+            init();
             CreateObs();
         }
 
-        public void set_collision_groups()
-        {
-            PhysicsSprite spr = cnvGame1.PhysicsObjects["ball1"];
-            spr.BodyObject.CollisionCategories = FarseerPhysics.Dynamics.Category.Cat2;
-            spr.BodyObject.CollidesWith = FarseerPhysics.Dynamics.Category.Cat2;
-        }
+        //public void set_collision_groups()
+        //{
+        //    PhysicsSprite spr = cnvGame1.PhysicsObjects["ball1"];
+        //    spr.BodyObject.CollisionCategories = FarseerPhysics.Dynamics.Category.Cat2;
+        //    spr.BodyObject.CollidesWith = FarseerPhysics.Dynamics.Category.Cat2;
+        //}
 
-        public void hit_basket(PhysicsSprite ball, PhysicsSprite basket, FarseerPhysics.Dynamics.Contacts.Contact contact)
-        {
-
-        }
     }
 
 }

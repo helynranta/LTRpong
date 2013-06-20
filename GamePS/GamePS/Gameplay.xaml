@@ -10,25 +10,25 @@
 
     <Canvas>
         <!--This is the physics canvas where all the action happens-->
-        <ph:PhysicsCanvas x:Name="cnvGame1" Background="PaleVioletRed" MousePickEnabled="False" Tapped="uTouched">
+        <ph:PhysicsCanvas x:Name="cnvGame1" Background="Lime" MousePickEnabled="True" Tapped="uTouched">
 
             <!--Creating the walls, so that nothing goes off the screen, it still looks ugly, because they were made with the visual desginger-->
             <ph:PhysicsSprite x:Name="ground" Background="SteelBlue" Canvas.Left="0" Canvas.Top="648" Width="1366" Height="120" IsStatic="True">
-                <Button x:Name="btnDelete" Content="Delete ALL" Click="DeleteAll" Height="60" FontSize="28" Canvas.Left="102" Canvas.Top="21" />
-                <Button x:Name="apuva" Content="ABUVA" Click="AAA" Height="60" FontSize="28" Canvas.Left="321" Canvas.Top="26"/>
-                <Button x:Name="btnAddBlock" Content="Ball ++ 3 ;)" Click="spw" Height="60" FontSize="28" Canvas.Left="569" Canvas.Top="24" />
+
+
+                <Button x:Name="Back" Content="Go home" Click="go_back" Height="60" FontSize="28" Canvas.Left="917" Canvas.Top="26" />
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="ground_Copy" Background="DarkGreen" Canvas.Left="-309.582" Canvas.Top="310.03" Width="645.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="left_wall" Background="DarkGreen" Canvas.Left="-313.582" Canvas.Top="308.03" Width="653.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="ground_Copy1" Background="DarkGreen" Canvas.Left="1026.239" Canvas.Top="310.03" Width="645.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="right_wall" Background="DarkGreen" Canvas.Left="1026.739" Canvas.Top="302.53" Width="654.104" Height="39" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="ground_Copy2" Background="DarkGreen" Canvas.Left="26" Width="1311" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5">
+            <ph:PhysicsSprite x:Name="roof" Background="DarkGreen" Canvas.Left="26" Width="1311" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="0.0"/>
                 </ph:PhysicsSprite.RenderTransform>
@@ -38,11 +38,28 @@
             </ph:PhysicsSprite>
 
             <!--This is the "player"-->
-            <ph:PhysicsSprite x:Name="ball1" Canvas.Left="60" Canvas.Top=" 70" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.7">
+            <ph:PhysicsSprite x:Name="ball1" Canvas.Left="99" Canvas.Top="582" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.7">
                 <Image Width="50">
                     <Image.Source>
                         <!--DecodePixel saves resources-->
                         <BitmapImage DecodePixelWidth="50" UriSource="Image/ball1.png" />
+                    </Image.Source>
+                </Image>
+            </ph:PhysicsSprite>
+            <!--The "Enemy"-->
+            <ph:PhysicsSprite x:Name="mankee" IsStatic="False" Width="50" Height="50" Canvas.Left="300" Canvas.Top="300" RestitutionCoefficient="0.80">
+                <Image Width="50">
+                    <Image.Source>
+                        <BitmapImage DecodePixelWidth="50" UriSource="Image/mankee.png" />
+                    </Image.Source>
+                </Image>
+            </ph:PhysicsSprite>
+
+            <!--The "Goal"-->
+            <ph:PhysicsSprite x:Name="mouth" IsStatic="True" Width="50" Height="50" RestitutionCoefficient="0.6" Canvas.Left="1000" Canvas.Top="40">
+                <Image Width="50">
+                    <Image.Source>
+                        <BitmapImage DecodePixelWidth="50" UriSource="Image/mouth.png" />
                     </Image.Source>
                 </Image>
             </ph:PhysicsSprite>
@@ -52,7 +69,8 @@
 
         <!--ApplicationBar buttons use a style defined by the app.-->
         <!--Button for adding balls-->
-        <Button x:Name="Back" Content="Go home" Click="go_back" Height="60" FontSize="28" Canvas.Left="905" Canvas.Top="23" />
         <!--Button for deleting all objects except the ground/walls + obstacles-->
+        <TextBlock x:Name="scorecount" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="24" Canvas.Left="1129" Canvas.Top="690" />
     </Canvas>
+
 </Page>

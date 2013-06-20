@@ -5,9 +5,12 @@ Assets\StoreLogo.png
 App.xaml
 Box.xaml
 Common\StandardStyles.xaml
+GameOver.xaml
 Gameplay.xaml
 MainPage.xaml
 Menu.xaml
 Obstacle.xaml
 Common\ReadMe.txt
 Image\ball1.png
+Image\mankee.png
+Image\mouth.png

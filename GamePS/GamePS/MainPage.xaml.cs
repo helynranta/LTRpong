@@ -35,6 +35,7 @@ namespace GamePS
             //As the game is  started, create a few obstacles to the screen
             //this.CreateObs();
 
+
         }
 
         Random random = new Random();

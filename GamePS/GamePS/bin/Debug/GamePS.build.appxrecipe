@@ -56,6 +56,12 @@
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\ball1.png">
       <PackagePath>Image\ball1.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\mankee.png">
+      <PackagePath>Image\mankee.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\mouth.png">
+      <PackagePath>Image\mouth.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
@@ -67,6 +73,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\Common\StandardStyles.xaml">
       <PackagePath>Common\StandardStyles.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\GameOver.xaml">
+      <PackagePath>GameOver.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\bin\Debug\Gameplay.xaml">
       <PackagePath>Gameplay.xaml</PackagePath>

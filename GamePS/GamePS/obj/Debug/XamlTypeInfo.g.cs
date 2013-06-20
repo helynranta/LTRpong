@@ -118,17 +118,21 @@ namespace GamePS.GamePS_XamlTypeInfo
 
         private object Activate_5_Box() { return new global::GamePS.Box(); }
 
-        private object Activate_7_Dictionary() { return new global::System.Collections.Generic.Dictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>(); }
+        private object Activate_6_LayoutAwarePage() { return new global::GamePS.Common.LayoutAwarePage(); }
 
-        private object Activate_8_Gameplay() { return new global::GamePS.Gameplay(); }
+        private object Activate_7_GameOver() { return new global::GamePS.GameOver(); }
 
-        private object Activate_9_MainPage() { return new global::GamePS.MainPage(); }
+        private object Activate_9_Dictionary() { return new global::System.Collections.Generic.Dictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>(); }
 
-        private object Activate_10_Menu() { return new global::GamePS.Menu(); }
+        private object Activate_10_Gameplay() { return new global::GamePS.Gameplay(); }
 
-        private object Activate_11_Obstacle() { return new global::GamePS.Obstacle(); }
+        private object Activate_11_MainPage() { return new global::GamePS.MainPage(); }
 
-        private void MapAdd_7_Dictionary(object instance, object key, object item)
+        private object Activate_12_Menu() { return new global::GamePS.Menu(); }
+
+        private object Activate_13_Obstacle() { return new global::GamePS.Obstacle(); }
+
+        private void MapAdd_9_Dictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>)instance;
             var newKey = (global::System.String)key;
@@ -331,6 +335,18 @@ namespace GamePS.GamePS_XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "GamePS.Common.LayoutAwarePage":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_LayoutAwarePage;
+                xamlType = userType;
+                break;
+
+            case "GamePS.GameOver":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.GameOver), GetXamlTypeByName("GamePS.Common.LayoutAwarePage"));
+                userType.Activator = Activate_7_GameOver;
+                xamlType = userType;
+                break;
+
             case "FarseerPhysics.Dynamics.World":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::FarseerPhysics.Dynamics.World), GetXamlTypeByName("Object"));
                 xamlType = userType;
@@ -340,32 +356,32 @@ namespace GamePS.GamePS_XamlTypeInfo
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::System.Collections.Generic.Dictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>), GetXamlTypeByName("Object"));
                 AddToMapOfTypeToStandardName(typeof(global::System.Collections.Generic.Dictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>),
                                                    "System.Collections.Generic.Dictionary<String, Spritehand.FarseerHelper.PhysicsSprite>");
-                userType.Activator = Activate_7_Dictionary;
-                userType.DictionaryAdd = MapAdd_7_Dictionary;
+                userType.Activator = Activate_9_Dictionary;
+                userType.DictionaryAdd = MapAdd_9_Dictionary;
                 xamlType = userType;
                 break;
 
             case "GamePS.Gameplay":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Gameplay), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_Gameplay;
+                userType.Activator = Activate_10_Gameplay;
                 xamlType = userType;
                 break;
 
             case "GamePS.MainPage":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_MainPage;
+                userType.Activator = Activate_11_MainPage;
                 xamlType = userType;
                 break;
 
             case "GamePS.Menu":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Menu), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_Menu;
+                userType.Activator = Activate_12_Menu;
                 xamlType = userType;
                 break;
 
             case "GamePS.Obstacle":
                 userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Obstacle), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_Obstacle;
+                userType.Activator = Activate_13_Obstacle;
                 xamlType = userType;
                 break;
 

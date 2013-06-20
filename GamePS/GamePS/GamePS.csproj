@@ -123,6 +123,9 @@
     <Compile Include="Common\LayoutAwarePage.cs" />
     <Compile Include="Common\RichTextColumns.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gameplay.xaml.cs">
       <DependentUpon>Gameplay.xaml</DependentUpon>
     </Compile>
@@ -150,6 +153,8 @@
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Common\ReadMe.txt" />
     <Content Include="Image\ball1.png" />
+    <Content Include="Image\mankee.png" />
+    <Content Include="Image\mouth.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -163,6 +168,10 @@
     <Page Include="Common\StandardStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Gameplay.xaml">
       <SubType>Designer</SubType>
