@@ -53,8 +53,14 @@
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\apple.png">
+      <PackagePath>Image\apple.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\ball1.png">
       <PackagePath>Image\ball1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\banana.PNG">
+      <PackagePath>Image\banana.PNG</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\mankee.png">
       <PackagePath>Image\mankee.png</PackagePath>

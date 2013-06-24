@@ -152,7 +152,9 @@
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Common\ReadMe.txt" />
+    <Content Include="Image\apple.png" />
     <Content Include="Image\ball1.png" />
+    <Content Include="Image\banana.PNG" />
     <Content Include="Image\mankee.png" />
     <Content Include="Image\mouth.png" />
   </ItemGroup>

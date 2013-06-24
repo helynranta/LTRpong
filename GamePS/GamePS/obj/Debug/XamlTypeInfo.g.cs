@@ -124,7 +124,7 @@ namespace GamePS.GamePS_XamlTypeInfo
 
         private object Activate_9_Dictionary() { return new global::System.Collections.Generic.Dictionary<global::System.String, global::Spritehand.FarseerHelper.PhysicsSprite>(); }
 
-        private object Activate_10_Gameplay() { return new global::GamePS.Gameplay(); }
+        private object Activate_10_Stage2() { return new global::GamePS.Stage2(); }
 
         private object Activate_11_MainPage() { return new global::GamePS.MainPage(); }
 
@@ -361,9 +361,9 @@ namespace GamePS.GamePS_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case "GamePS.Gameplay":
-                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Gameplay), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_Gameplay;
+            case "GamePS.Stage2":
+                userType = new global::GamePS.GamePS_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GamePS.Stage2), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_Stage2;
                 xamlType = userType;
                 break;
 

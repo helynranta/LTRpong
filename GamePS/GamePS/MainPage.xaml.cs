@@ -133,7 +133,7 @@ namespace GamePS
 
         public void start_game(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Gameplay));
+            this.Frame.Navigate(typeof(Stage2));
         }
       
     }

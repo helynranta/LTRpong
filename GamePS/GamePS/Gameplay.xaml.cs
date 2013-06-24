@@ -22,21 +22,22 @@ namespace GamePS
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Gameplay : Page
+    public sealed partial class Stage2 : Page
     {
         int player_x, player_y;
-        public int scores = 30;
+        public int scores = 3;
         public bool Hitmonkey = false;
         DateTime _dtLastFpsUpdate;
-        DateTime MankeeTime;
+        DateTime MankeeTime;  //monkeys movement time
+        DateTime spawntime; // spawn time for rocks
         PhysicsSprite monkey;
         PhysicsSprite player;
-        public Gameplay()
+        public Stage2()
         {
             this.InitializeComponent();
             cnvGame1.Collision += new PhysicsCanvas.CollisionHandler(cnvGame_Collision);
             cnvGame1.TimerLoop += new PhysicsCanvas.TimerLoopHandler(cnvGame_TimerLoop);
-            CreateObs();
+            //CreateObs();
             
         }
 
@@ -54,33 +55,35 @@ namespace GamePS
             player_y = (int)ball1.Position.Y;
             player_x = (int)ball1.Position.X;
             // this event is fired for EACH Timer tick of the simulation.
-            if ((DateTime.Now - _dtLastFpsUpdate).TotalMilliseconds > 2000)
+
+            //Monkey moves every 2 seconds
+            if ((DateTime.Now - MankeeTime).TotalMilliseconds > 2000)
             {
                 
                 mankee_move();
-                _dtLastFpsUpdate = DateTime.Now;
-            }
-            if ((DateTime.Now - MankeeTime).TotalMilliseconds > 50)
-            {
-                scorecount.Text = String.Format("Score: {0} {1},{2}", scores, player_x, player_y);
+                
                 MankeeTime = DateTime.Now;
             }
-            if (Hitmonkey == true)
-                Enemyhit();
-            if (scores < -2)
+            //Display text time
+            if ((DateTime.Now - _dtLastFpsUpdate).TotalMilliseconds > 50)
             {
-                this.Frame.Navigate(typeof(GameOver));
-                scores = 0;
+                scorecount.Text = String.Format("Score: {0} {1},{2}", scores, player_x, player_y);
+                _dtLastFpsUpdate = DateTime.Now;
+            }
+
+            //Spawn the rocks
+            if ((DateTime.Now - spawntime).TotalMilliseconds > 3500)
+            {
+                spawn();
+                spawntime = DateTime.Now;
             }
             
         }
-        public void Enemyhit()
-        {
-            scores--;
-            Hitmonkey = false;
-        }
+
         public void PlayerScores()
         {
+            
+            //this.Frame.Navigate(typeof(GameOver));
             scores++;
         }
 
@@ -98,8 +101,31 @@ namespace GamePS
             {
                 PlayerScores();
             }
+
+            //if the player hits an obstacle, remove it
+            if (sprite1.Name == "ball1" && sprite2.Name.StartsWith("obstacle"))
+            {
+                sprite2.IsStatic = false;
+                cnvGame1.DeletePhysicsObject(sprite2.Name);
+            }
+            
+            //if hit the floor
+            if (sprite1.Name.StartsWith("rocks") && sprite2.Name == "ground")
+            {
+                cnvGame1.DeletePhysicsObject(sprite1.Name);
+                scores--;
+            }
+
+            //if goes off the screen, scores
+            if (sprite1.Name.StartsWith("rocks") && sprite2.Name.StartsWith("destroy"))
+            {
+                cnvGame1.DeletePhysicsObject(sprite1.Name);
+                PlayerScores();
+                
+            }
             
         }
+        
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -115,11 +141,11 @@ namespace GamePS
         //Creates balls to the canvas
         public void spawn()
         {
-            for (int i = 0; i < 3; i++)
-            {
-                Box bx = new Box();
-                cnvGame1.AddPhysicsUserControl(bx, 5, 0, 1);
-            }
+            int x = random.Next(0, 1300);
+            int y = random.Next(-100, -10);
+            Box bx = new Box();
+            cnvGame1.AddPhysicsUserControl(bx, x, y, 1);
+            
         }
 
         //actually this is the button that spawns three balls
@@ -144,7 +170,7 @@ namespace GamePS
                 dir.Normalize();
                 //dir *= 0.7f;
                 //Apply force to the balls in the direction that userd touched on the screen
-                if (spr.Name == "ball1")
+                if (spr.Name == "ball1" || spr.Name == "ball2")
                     spr.BodyObject.ApplyLinearImpulse(dir);
 
 
@@ -160,12 +186,12 @@ namespace GamePS
             for (int i = 0; i < physicsList.Count; i++)
             {
                 PhysicsSprite spr = physicsList[i];
-                if (spr.Name == "mankee" || spr.Name == "mankee2")
+                if (spr.Name == "mankee" || spr.Name.StartsWith("mankee"))
                 {
-                    Vector2 test;
-                    test.X = player_x;
-                    test.Y = player_y;
-                    Vector2 direction = Vector2.Normalize(test - spr.Position);
+                    Vector2 pos;
+                    pos.X = player_x;
+                    pos.Y = player_y;
+                    Vector2 direction = Vector2.Normalize(pos - spr.Position);
                     spr.BodyObject.ApplyLinearImpulse(direction);
                 }
             }
@@ -177,11 +203,12 @@ namespace GamePS
             //pt is the position where th euser touched on the canvas
             Point pt = e.GetPosition(cnvGame1);
             // create a vector2 of the point, to move the objects in the pressed location
-            Vector2 suunta;
-            suunta.X = (float)pt.X;
-            suunta.Y = (float)pt.Y;
-
-            move(suunta);
+            Vector2 direction;
+            direction.X = (float)pt.X;
+            direction.Y = (float)pt.Y;
+            
+            
+            move(direction);
         }
 
         //Deletes all physics objects except walls/ground / obstacles
