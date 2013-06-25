@@ -8,19 +8,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--This project uses Physics Helper XAML and is based on their getting started tutorial http://physicshelperxaml.codeplex.com/documentation-->
-
-    <!--This the canvas we draw on-->
+    
     <Canvas x:Name="cnvGameOuter">
 
 
         <!--ApplicationBar buttons use a style defined by the app.-->
-        <!--Button for adding balls-->
+        <!--Button for starting the game-->
         <Button x:ConnectionId='1' x:Name="startgame" Content="startgame"                    Height="60" FontSize="28" Canvas.Left="346" Canvas.Top="29" />
         <TextBlock Text="Get the balls off the sides of the screen" Opacity="0.7" Canvas.Left="487" Canvas.Top="198" FontSize=" 28"></TextBlock>
-        <!--Button for deleting all objects except the ground/walls + obstacles-->
-
-
+        
     </Canvas>
 
 </Page>

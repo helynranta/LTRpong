@@ -9,7 +9,7 @@
     mc:Ignorable="d">
     <!--This is the BALL "class"-->
     <Canvas x:Name="BOX">
-        <ph:PhysicsSprite x:Name="rocks" Canvas.Left="60" Canvas.Top=" 70" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.7" >
+        <ph:PhysicsSprite x:Name="rocks" Canvas.Left="60" Canvas.Top=" 70" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.5" >
             <Image Width="50">
                 <Image.Source>
                     <BitmapImage DecodePixelWidth="50" UriSource="Image/ball1.png" />

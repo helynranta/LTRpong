@@ -68,6 +68,9 @@
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\mouth.png">
       <PackagePath>Image\mouth.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Image\player.png">
+      <PackagePath>Image\player.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\GamePS\GamePS\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>

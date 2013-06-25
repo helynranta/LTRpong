@@ -8,37 +8,36 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <!--This project uses Physics Helper XAML and is based on their getting started tutorial http://physicshelperxaml.codeplex.com/documentation-->
+
+    <!--This the canvas we draw on-->
+    
     <Canvas>
         <!--This is the physics canvas where all the action happens-->
-        <ph:PhysicsCanvas x:ConnectionId='1' x:Name="cnvGame1" Background="Black" MousePickEnabled="True"                  >
+        <ph:PhysicsCanvas x:ConnectionId='1' x:Name="cnvGame1" Background="DarkGray" MousePickEnabled="True"                   >
 
             <!--Creating the walls, so that nothing goes off the screen, it still looks ugly, because they were made with the visual desginger-->
             <ph:PhysicsSprite x:Name="ground" Background="SteelBlue" Canvas.Left="0" Canvas.Top="648" Width="1366" Height="120" IsStatic="True">
 
-
+                <!--Go back to main menu-->
                 <Button x:ConnectionId='2' x:Name="Back" Content="Go home"                 Height="60" FontSize="28" Canvas.Left="917" Canvas.Top="26" />
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="left_wall" Background="DarkGreen" Canvas.Left="-409.582" Canvas.Top="-380.97" Width="845.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="left_wall" Background="DarkGreen" Canvas.Left="-1254.082" Canvas.Top="-1244.47" Width="2553.104" Height="48" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="right_wall" Background="DarkGreen" Canvas.Left="860.739" Canvas.Top="-363.47" Width="986.104" Height="39" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="right_wall" Background="DarkGreen" Canvas.Left="54.239" Canvas.Top="-1234.97" Width="2582.104" Height="56" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
 
             <!--This is the "player"-->
-            <ph:PhysicsSprite x:Name="ball1" Canvas.Left="99" Canvas.Top="582" Width="50" Height="50" ShapeType="Ellipse" RestitutionCoefficient="0.7">
-                <Image Width="50">
-                    <Image.Source>
-                        <!--DecodePixel saves resources-->
-                        <BitmapImage DecodePixelWidth="50" UriSource="Image/apple.png" />
-                    </Image.Source>
-                </Image>
+            <ph:PhysicsSprite x:Name="ball1" Canvas.Left="99" Canvas.Top="582" ShapeType="Rectangle" Width="200" Height="50" RestitutionCoefficient="0">
+                <Rectangle Width="200" Height="50" Fill="DarkCyan"></Rectangle>
             </ph:PhysicsSprite>
-            <!--The "Enemy"-->
+            <!--The "Enemy" or "helper", how the player chooses to see it-->
             <ph:PhysicsSprite x:Name="mankee" IsStatic="False" Width="50" Height="50" Canvas.Left="860" Canvas.Top="558" RestitutionCoefficient="0.80">
                 <Image Width="50">
                     <Image.Source>
@@ -54,32 +53,33 @@
                 </Image>
             </ph:PhysicsSprite>
 
-            <!--The "Goal"-->
-            <ph:PhysicsSprite x:Name="este_Copy11" Background="Purple" Canvas.Left="546" Width="191" Height="20" IsStatic="False" Canvas.Top="542" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <!--The "Goals" are on the right and left sides of the screen-->
+            <ph:PhysicsSprite x:Name="este_Copy11" Background="Purple" Canvas.Left="563.5" Width="191" Height="55" IsStatic="False" Canvas.Top="524.5" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="left_wall_Copy" Background="DarkGreen" Canvas.Left="-34.082" Canvas.Top="250.53" Width="96.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="left_wall_Copy" Background="DarkGreen" Canvas.Left="-21.082" Canvas.Top="237.53" Width="96.104" Height="55" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="left_wall_Copy1" Background="DarkGreen" Canvas.Left="-30.082" Canvas.Top="545.53" Width="98.104" Height="29" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="left_wall_Copy1" Background="DarkGreen" Canvas.Left="-19.582" Canvas.Top="535.03" Width="98.104" Height="50" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="right_wall_Copy" Background="DarkGreen" Canvas.Left="1312.24" Canvas.Top="305.03" Width="71.104" Height="39" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="right_wall_Copy" Background="DarkGreen" Canvas.Left="1304.24" Canvas.Top="297.03" Width="71.104" Height="55" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
-            <ph:PhysicsSprite x:Name="right_wall_Copy1" Background="DarkGreen" Canvas.Left="1305.24" Canvas.Top="577.03" Width="79.104" Height="39" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <ph:PhysicsSprite x:Name="right_wall_Copy1" Background="DarkGreen" Canvas.Left="1294.24" Canvas.Top="566.03" Width="79.104" Height="61" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
+            <!--These blocks destroys the balls once they're off the sides-->
             <ph:PhysicsSprite x:Name="destroy_right" Background="DarkGreen" Canvas.Left="1023.74" Canvas.Top="348.53" Width="792.104" Height="39" IsStatic="True" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <ph:PhysicsSprite.RenderTransform>
                     <CompositeTransform Rotation="90.0"/>
@@ -90,13 +90,17 @@
                     <CompositeTransform Rotation="90.0"/>
                 </ph:PhysicsSprite.RenderTransform>
             </ph:PhysicsSprite>
+            <ph:PhysicsSprite x:Name="este_Copy" Background="Purple" Width="1366" Height="55" IsStatic="True" Canvas.Top="-2557" RenderTransformOrigin="0.5,0.5">
+                <ph:PhysicsSprite.RenderTransform>
+                    <CompositeTransform Rotation="0"/>
+                </ph:PhysicsSprite.RenderTransform>
+            </ph:PhysicsSprite>
 
         </ph:PhysicsCanvas>
 
 
         <!--ApplicationBar buttons use a style defined by the app.-->
-        <!--Button for adding balls-->
-        <!--Button for deleting all objects except the ground/walls + obstacles-->
+        <!--Score text at the bottom-->
         <TextBlock x:Name="scorecount" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontSize="24" Canvas.Left="1129" Canvas.Top="690" />
     </Canvas>
 

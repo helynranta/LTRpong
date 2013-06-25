@@ -157,6 +157,7 @@
     <Content Include="Image\banana.PNG" />
     <Content Include="Image\mankee.png" />
     <Content Include="Image\mouth.png" />
+    <Content Include="Image\player.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
