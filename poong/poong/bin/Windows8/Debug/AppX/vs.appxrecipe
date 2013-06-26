@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-IJ22OAOI5UT</Machine>
+    <WindowsUser>codecamp</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>378A66375BD669A717B99BF51DA969FB01A2C311D2C9AFF4E3674ADA927DE588</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>923d3650-c73c-4d4b-837e-d05f70dda071_1.0.0.0_neutral__qj5ja5pefmqbr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>923d3650-c73c-4d4b-837e-d05f70dda071_qj5ja5pefmqbr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>923d3650-c73c-4d4b-837e-d05f70dda071</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=codecamp</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-06-26T09:41:10.044</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\poong.exe">
+      <PackagePath>poong.exe</PackagePath>
+      <Modified>2013-06-26T09:41:08.983</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\poong.pdb">
+      <PackagePath>poong.pdb</PackagePath>
+      <Modified>2013-06-26T09:41:08.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
+      <PackagePath>MonoGame.Framework.dll</PackagePath>
+      <Modified>2013-02-25T16:44:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.Direct2D1.dll">
+      <PackagePath>SharpDX.Direct2D1.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.Direct3D11.dll">
+      <PackagePath>SharpDX.Direct3D11.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.dll">
+      <PackagePath>SharpDX.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.DXGI.dll">
+      <PackagePath>SharpDX.DXGI.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.MediaFoundation.dll">
+      <PackagePath>SharpDX.MediaFoundation.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XAudio2.dll">
+      <PackagePath>SharpDX.XAudio2.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.dll">
+      <PackagePath>SharpDX.XInput.dll</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.xml">
+      <PackagePath>SharpDX.xml</PackagePath>
+      <Modified>2012-12-28T16:17:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XInput.xml">
+      <PackagePath>SharpDX.XInput.xml</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.Direct2D1.xml">
+      <PackagePath>SharpDX.Direct2D1.xml</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.Direct3D11.xml">
+      <PackagePath>SharpDX.Direct3D11.xml</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.DXGI.xml">
+      <PackagePath>SharpDX.DXGI.xml</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.MediaFoundation.xml">
+      <PackagePath>SharpDX.MediaFoundation.xml</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XAudio2.xml">
+      <PackagePath>SharpDX.XAudio2.xml</PackagePath>
+      <Modified>2012-12-28T16:17:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Ball.xnb">
+      <PackagePath>Content\Ball.xnb</PackagePath>
+      <Modified>2013-06-26T09:32:25.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\BallWallCollision.xnb">
+      <PackagePath>Content\BallWallCollision.xnb</PackagePath>
+      <Modified>2013-06-26T09:32:25.814</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Middle.xnb">
+      <PackagePath>Content\Middle.xnb</PackagePath>
+      <Modified>2013-06-26T09:32:25.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Paddle.xnb">
+      <PackagePath>Content\Paddle.xnb</PackagePath>
+      <Modified>2013-06-26T09:32:25.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\PaddleBallCollision.xnb">
+      <PackagePath>Content\PaddleBallCollision.xnb</PackagePath>
+      <Modified>2013-06-26T09:32:25.821</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\StartScreen.xnb">
+      <PackagePath>Content\StartScreen.xnb</PackagePath>
+      <Modified>2013-06-26T09:32:25.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-06T11:37:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-06T11:37:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-06T11:37:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-01-06T11:37:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-06-26T09:41:09.953</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
