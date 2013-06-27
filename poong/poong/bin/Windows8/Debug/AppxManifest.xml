@@ -22,9 +22,12 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="poong.exe" EntryPoint="poong.App">
-      <VisualElements DisplayName="poong" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="poong" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="poong" Logo="Assets\logo.png" SmallLogo="Assets\SmallLogo.png" Description="poong" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="Assets\SplashScreen.png" />
+        <SplashScreen Image="Assets\splash.png" BackgroundColor="cornflowerBlue" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
       </VisualElements>
     </Application>
   </Applications>

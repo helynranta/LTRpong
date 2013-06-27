@@ -1,39 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-
-  <Identity Name="923d3650-c73c-4d4b-837e-d05f70dda071"
-            Publisher="CN=codecamp"
-            Version="1.0.0.0" />
-
+  <Identity Name="923d3650-c73c-4d4b-837e-d05f70dda071" Publisher="CN=codecamp" Version="1.0.0.0" />
   <Properties>
     <DisplayName>poong</DisplayName>
     <PublisherDisplayName>codecamp</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
     <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
-
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="App"
-        Executable="$targetnametoken$.exe"
-        EntryPoint="poong.App">
-        <VisualElements
-            DisplayName="poong"
-            Logo="Assets\Logo.png"
-            SmallLogo="Assets\SmallLogo.png"
-            Description="poong"
-            ForegroundText="light"
-            BackgroundColor="#464646">
-            <DefaultTile ShowName="allLogos" />
-            <SplashScreen Image="Assets\SplashScreen.png" />
-        </VisualElements>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="poong.App">
+      <VisualElements DisplayName="poong" Logo="Assets\logo.png" SmallLogo="Assets\SmallLogo.png" Description="poong" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\splash.png" BackgroundColor="cornflowerBlue" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
     </Application>
   </Applications>
   <Capabilities>

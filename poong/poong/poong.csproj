@@ -130,7 +130,10 @@
     <Compile Include="Classes\Ball.cs" />
     <Compile Include="Classes\GameObject.cs" />
     <Compile Include="Classes\Input.cs" />
+    <Compile Include="Classes\Particle.cs" />
+    <Compile Include="Classes\ParticleEngine.cs" />
     <Compile Include="Classes\Player.cs" />
+    <Compile Include="Classes\SoundManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +142,12 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Assets\splash.scale-100.png" />
+    <Content Include="Assets\splash.scale-140.png" />
+    <Content Include="Assets\splash.scale-180.png" />
+    <Content Include="Assets\splash2.png" />
+    <Content Include="Assets\splash3.png" />
+    <Content Include="Assets\splashy.png" />
     <Content Include="Content\Ball.xnb" />
     <Content Include="Content\BallWallCollision.xnb" />
     <Content Include="Content\Middle.xnb" />
@@ -146,6 +155,10 @@
     <Content Include="Content\PaddleBallCollision.xnb" />
     <Content Include="Content\StartScreen.xnb" />
     <Content Include="Content\Fonty.xnb" />
+    <Content Include="Content\circle.xnb" />
+    <Content Include="Content\diamond.xnb" />
+    <Content Include="Content\star.xnb" />
+    <Content Include="Content\gamemusic.xnb" />
     <None Include="poong_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

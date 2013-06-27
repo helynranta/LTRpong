@@ -2,7 +2,14 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
+using Microsoft.Xna.Framework.Audio;
 using System;
+using System.Collections.Generic;
+
+//This game has been made by following ertay shashko's blog http://ertayshashko.wordpress.com/2013/01/02/developing-2d-games-for-windows-8-using-monogame-part-fourpolishing/
+//all the calsses etc except the particle engine which is from another tutorial (link in particle class)
+//In case my commentation is unsufficient, go to the blog for more detailed explanation
+//
 
 namespace poong
 {
@@ -23,6 +30,10 @@ namespace poong
         Ball ball;
         SpriteFont fonty;
         Texture2D middleTexture;  // Centerline
+        ParticleEngine particleEngine; //Particle engine for the ball
+        SoundEffectInstance music;
+        
+
 
         public Game1()
         {
@@ -46,6 +57,7 @@ namespace poong
             player1 = new Player();
             player2 = new Player();
             ball = new Ball();
+            
 
             
 
@@ -79,6 +91,19 @@ namespace poong
 
             //Load middleline sprite
             middleTexture = Content.Load<Texture2D>("Middle");
+
+            //ParticleEngines textures, from http://rbwhitaker.wikidot.com/2d-particle-engine-4
+            List<Texture2D> textures = new List<Texture2D>();
+            textures.Add(Content.Load<Texture2D>("circle"));
+            textures.Add(Content.Load<Texture2D>("star"));
+            textures.Add(Content.Load<Texture2D>("diamond"));
+            particleEngine = new ParticleEngine(textures, new Vector2(400, 240));
+            ////////////////////////////////////////////////////////////////
+            SoundManager.LoadSounds(Content);
+            music = SoundManager.GameMusic.CreateInstance();
+            music.IsLooped = true;
+            music.Play();
+            
 
 
         }
@@ -128,12 +153,16 @@ namespace poong
                 ball.Velocity.X = Math.Abs(ball.Velocity.X);
                 //add spin
                 ball.Velocity += player1TouchVelocity * SPIN;
+                //play sound
+                SoundManager.PaddleBallCollisionSound.Play();
             }
             if (GameObject.CheckPaddleBallCollision(player2, ball))
             {
                 ball.Velocity.X = -Math.Abs(ball.Velocity.X);
                 //Add spin to the ball
                 ball.Velocity += player2TouchVelocity * SPIN;
+                //play sound
+                SoundManager.PaddleBallCollisionSound.Play();
             }
 
 
@@ -149,6 +178,10 @@ namespace poong
                 ball.Launch(BALL_START_SPEED);
                 player1.score++;
             }
+
+            //Update the balls particles, location = balls´' location
+            particleEngine.EmitterLocation = new Vector2(ball.Position.X + (ball.Texture.Width / 2), ball.Position.Y + (ball.Texture.Height / 2));
+            particleEngine.Update();
 
             base.Update(gameTime);
         }
@@ -168,6 +201,7 @@ namespace poong
             player1.Draw(_spriteBatch);
             player2.Draw(_spriteBatch);
             ball.Draw(_spriteBatch);
+            particleEngine.Draw(_spriteBatch);
 
             _spriteBatch.End();
 

@@ -7,16 +7,16 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\poong.exe">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\poong.exe">
       <PackagePath>poong.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\poong.pdb">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\poong.pdb">
       <PackagePath>poong.pdb</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\MonoGame.Framework.dll">
@@ -64,44 +64,76 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\MSBuild\..\MonoGame\v3.0\Assemblies\Windows8\SharpDX.XAudio2.xml">
       <PackagePath>SharpDX.XAudio2.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Ball.xnb">
-      <PackagePath>Content\Ball.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\splash.scale-100.png">
+      <PackagePath>Assets\splash.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\BallWallCollision.xnb">
-      <PackagePath>Content\BallWallCollision.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\splash.scale-140.png">
+      <PackagePath>Assets\splash.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Middle.xnb">
-      <PackagePath>Content\Middle.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\splash.scale-180.png">
+      <PackagePath>Assets\splash.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Paddle.xnb">
-      <PackagePath>Content\Paddle.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\splash2.png">
+      <PackagePath>Assets\splash2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\PaddleBallCollision.xnb">
-      <PackagePath>Content\PaddleBallCollision.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\splash3.png">
+      <PackagePath>Assets\splash3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\StartScreen.xnb">
-      <PackagePath>Content\StartScreen.xnb</PackagePath>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\splashy.png">
+      <PackagePath>Assets\splashy.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Fonty.xnb">
-      <PackagePath>Content\Fonty.xnb</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\Logo.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\SmallLogo.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\SmallLogo.png">
       <PackagePath>Assets\SmallLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\SplashScreen.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\SplashScreen.png">
       <PackagePath>Assets\SplashScreen.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Ball.xnb">
+      <PackagePath>Content\Ball.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\BallWallCollision.xnb">
+      <PackagePath>Content\BallWallCollision.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Middle.xnb">
+      <PackagePath>Content\Middle.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Paddle.xnb">
+      <PackagePath>Content\Paddle.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\PaddleBallCollision.xnb">
+      <PackagePath>Content\PaddleBallCollision.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\StartScreen.xnb">
+      <PackagePath>Content\StartScreen.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\Fonty.xnb">
+      <PackagePath>Content\Fonty.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\circle.xnb">
+      <PackagePath>Content\circle.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\diamond.xnb">
+      <PackagePath>Content\diamond.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\star.xnb">
+      <PackagePath>Content\star.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\Content\gamemusic.xnb">
+      <PackagePath>Content\gamemusic.xnb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\codecamp\documents\visual studio 2012\Projects\poong\poong\bin\Windows8\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

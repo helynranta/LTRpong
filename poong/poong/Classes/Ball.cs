@@ -43,6 +43,8 @@ namespace poong
             {
                 Position.Y = 0;
                 Velocity.Y *= -1;
+                //play sound
+                SoundManager.BallWallCollisionSound.Play();
             }
 
             //Goes off the bottom 
@@ -50,6 +52,8 @@ namespace poong
             {
                 Position.Y = Game1.ScreenHeight - Texture.Height;
                 Velocity.Y *= -1;
+                //play sound
+                SoundManager.BallWallCollisionSound.Play();
             }
         }
 
